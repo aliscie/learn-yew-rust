@@ -43,7 +43,7 @@ pub fn app() -> Html {
 
     html! {
     <>
-    <Videos />
+    <Videos new_prop="Hello prop"/>
       <h1>{ "From app." }</h1>
     </>
     }

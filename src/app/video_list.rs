@@ -8,15 +8,20 @@ struct Video {
     url: String,
 }
 
-#[derive(Clone, Properties, PartialEq)]
-struct VideosListProps {
-    videos: Vec<Video>,
-    on_click: Callback<Video>,
+// #[derive(Clone, Properties, PartialEq)]
+// struct VideosListProps {
+//     videos: Vec<Video>,
+//     on_click: Callback<Video>,
+// }
+
+#[derive(Properties, PartialEq)]
+pub struct RenderedAtProps {
+    pub new_prop: String,
 }
 
 
 #[function_component(Videos)]
-pub fn videos() -> Html {
+pub fn videos(props: &RenderedAtProps) -> Html {
     let videos = vec![
         Video {
             id: 1,
@@ -47,6 +52,9 @@ pub fn videos() -> Html {
 
 
     videos.iter().map(|video| html! {
+    <>
+    <p>{ &props.new_prop }</p>
         <p>{format!("{}: {}", video.speaker, video.title)}</p>
+        </>
     }).collect()
 }
