@@ -48,13 +48,20 @@ pub fn videos(props: &RenderedAtProps) -> Html {
             url: "https://youtu.be/PsaFVLr8t4E".to_string(),
         },
     ];
-    // let on_click = on_click.clone();
+    let names = vec!["Sam","Bob","Ray"];
 
 
-    videos.iter().map(|video| html! {
+    html! {
     <>
-    <p>{ &props.new_prop }</p>
-        <p>{format!("{}: {}", video.speaker, video.title)}</p>
-        </>
-    }).collect()
+    <p>{"h"}</p>
+    <div id="introductions">
+        {
+            names.into_iter().map(|name| {
+                html!{<div key={name}>{ format!("Hello, I'am {}!",name) }</div>}
+            }).collect::<Html>()
+        }
+    </div>
+
+    </>
+    }
 }
