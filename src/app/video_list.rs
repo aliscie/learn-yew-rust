@@ -1,19 +1,10 @@
-#[derive(Clone, PartialEq)]
-pub struct Video {
-    pub(crate) id: usize,
-    pub(crate) title: String,
-    pub(crate) speaker: String,
-    pub(crate) url: String,
-}
+use yew::prelude::*;
 
-#[derive(Properties, PartialEq)]
-struct VideosListProps {
-    videos: Vec<Video>,
-}
-
-#[function_component(VideosList)]
-fn videos_list(VideosListProps { videos }: &VideosListProps) -> Html {
-    videos.iter().map(|video| html! {
-        <p>{format!("{}: {}", video.speaker, video.title)}</p>
-    }).collect()
+#[function_component(Videos)]
+pub fn videos() -> Html {
+    html! {
+    <>
+      <h1>{ "From video" }</h1>
+    </>
+    }
 }
