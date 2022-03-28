@@ -8,6 +8,13 @@ struct Video {
     url: String,
 }
 
+#[derive(Clone, Properties, PartialEq)]
+struct VideosListProps {
+    videos: Vec<Video>,
+    on_click: Callback<Video>,
+}
+
+
 #[function_component(Videos)]
 pub fn videos() -> Html {
     let videos = vec![
@@ -36,6 +43,7 @@ pub fn videos() -> Html {
             url: "https://youtu.be/PsaFVLr8t4E".to_string(),
         },
     ];
+    // let on_click = on_click.clone();
 
 
     videos.iter().map(|video| html! {
