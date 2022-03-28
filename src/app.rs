@@ -44,7 +44,7 @@ pub fn app() -> Html {
     html! {
     <>
     <Videos />
-      <h1>{ "From x." }</h1>
+      <h1>{ "From app." }</h1>
     </>
     }
 }
