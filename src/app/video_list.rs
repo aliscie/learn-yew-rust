@@ -29,7 +29,7 @@ pub fn state(props: &StateProps) -> Html {
     let counter = use_state(|| false);
     let onclick = {
         let counter = counter.clone();
-        Callback::from(move |e: MouseEvent| counter.set(!*counter))
+        Callback::from(move |_e: MouseEvent| counter.set(!*counter))
     };
 
     html! {
