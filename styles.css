@@ -1,0 +1,7 @@
+[contenteditable]{
+  outline: 0;
+}
+
+/*[contenteditable]:empty:not(:focus)::before {*/
+/*  content: attr(data-placeholder);*/
+/*}*/
