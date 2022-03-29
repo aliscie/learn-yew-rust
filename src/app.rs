@@ -3,14 +3,8 @@ use yew::prelude::*;
 mod video_list;
 
 use video_list::Videos;
+use video_list::Video;
 
-#[derive(Clone, PartialEq)]
-pub struct Video {
-    pub(crate) id: usize,
-    pub(crate) title: String,
-    pub(crate) speaker: String,
-    pub(crate) url: String,
-}
 
 #[function_component(App)]
 pub fn app() -> Html {
