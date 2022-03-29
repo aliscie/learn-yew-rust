@@ -45,7 +45,8 @@ pub fn app() -> Html {
     <>
     <Videos
     title="a list of videos"
-     videos={videos}/>
+     videos={videos}
+     />
       <h1>{ "From app." }</h1>
     </>
     }
