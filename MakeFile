@@ -13,3 +13,5 @@ web:
 	#cargo install cargo-web
 	#cargo web build
 	cargo web start
+tailwind:
+	npx tailwindcss-cli build ./tailwind.css -o build/tailwind.css
