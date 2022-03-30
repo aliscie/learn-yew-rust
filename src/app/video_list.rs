@@ -44,19 +44,10 @@ pub fn state(props: &StateProps) -> Html {
 }
 
 #[function_component(Videos)]
-pub fn videos(props: &RenderedAtProps) -> Html {
+pub fn videos() -> Html {
     html! {
     <>
-
-    <p>{&props.title}</p>
-    <div  id="introductions">
-        {
-             props.videos.clone().into_iter().map(|name| {
-                html!{<UseState id=1 title={name.title} description={name.speaker} url={name.url}  />}
-            }).collect::<Html>()
-        }
-    </div>
-
+<h1>{"sxx"}</h1>
     </>
     }
 }
