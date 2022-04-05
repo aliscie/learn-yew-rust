@@ -1,0 +1,33 @@
+pub fn initial_value() -> &'static str {
+    let html: &'static str = r#"
+
+    <h1>heading 1</h1><h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4<drag-icon><drag-icon id="drag">⠿</drag-icon></drag-icon></h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <p>Paragraphe is here
+    <br>
+    <p>     sub paaragaphe is here.</p>
+    </p>
+
+    <br>
+    <table aria-label="custom pagination table" style="box-sizing: inherit; font-family: &quot;IBM Plex Sans&quot;, sans-serif; font-size: 0.875rem; width: 500px; color: rgb(26, 32, 39); background-color: rgb(255, 255, 255);"><thead style="box-sizing: inherit;"><tr style="box-sizing: inherit;"><th style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; text-align: left; padding: 6px; background-color: rgb(231, 235, 240);">Dessert</th><th style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; text-align: left; padding: 6px; background-color: rgb(231, 235, 240);">Calories</th><th style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; text-align: left; padding: 6px; background-color: rgb(231, 235, 240);">Fat</th></tr></thead><tbody style="box-sizing: inherit;"><tr style="box-sizing: inherit;"><td style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;">Frozen yoghurt</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">159</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">6</td></tr><tr style="box-sizing: inherit;"><td style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;">Ice cream sandwich</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">237</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">9</td></tr><tr style="box-sizing: inherit;"><td style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;">Eclair</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">262</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">16</td></tr><tr style="box-sizing: inherit;"><td style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;">Cupcake</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">305</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">3.7</td></tr><tr style="box-sizing: inherit;"><td style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;">Marshmallow</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">318</td><td align="right" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px; width: 120px;">0</td></tr></tbody><tfoot style="box-sizing: inherit;"><tr style="box-sizing: inherit;"><td colspan="3" class="MuiTablePaginationUnstyled-root css-ndwb3y" style="box-sizing: inherit; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; padding: 6px;"><div class="MuiTablePaginationUnstyled-toolbar" style="box-sizing: inherit; display: flex; flex-direction: row; align-items: center; gap: 10px; -webkit-box-align: center;"><p class="MuiTablePaginationUnstyled-selectLabel" id="mui-17" style="box-sizing: inherit;">Rows per page:</p><select aria-label="5" class="MuiTablePaginationUnstyled-select" id="mui-16" aria-labelledby="mui-17 mui-16" style="box-sizing: inherit; padding: 2px; border-width: 1px; border-color: rgb(224, 227, 231); border-radius: 50px;"><option selected="" class="MuiTablePaginationUnstyled-menuItem" value="5" style="box-sizing: inherit;">5</option><option class="MuiTablePaginationUnstyled-menuItem" value="10" style="box-sizing: inherit;">10</option><option class="MuiTablePaginationUnstyled-menuItem" value="25" style="box-sizing: inherit;">25</option><option class="MuiTablePaginationUnstyled-menuItem" value="-1" style="box-sizing: inherit;">All</option></select><p class="MuiTablePaginationUnstyled-displayedRows" style="box-sizing: inherit; margin-left: auto;">1–5 of 13</p><div class="MuiTablePaginationUnstyled-actions" style="box-sizing: inherit; padding: 2px; border-width: 1px; border-color: rgb(224, 227, 231); border-image: initial; border-radius: 50px; text-align: center;"><button disabled="" aria-label="Go to first page" title="Go to first page" style="box-sizing: inherit; margin-right: 8px; margin-left: 8px; border-width: initial; border-style: initial; border-color: transparent; border-radius: 2px;"><span style="box-sizing: inherit;">|⇽</span></button><button disabled="" color="inherit" aria-label="Go to previous page" title="Go to previous page" style="box-sizing: inherit; margin-right: 8px; margin-left: 8px; border-width: initial; border-style: initial; border-color: transparent; border-radius: 2px;"><span style="box-sizing: inherit;">⇽</span></button><button color="inherit" aria-label="Go to next page" title="Go to next page" style="box-sizing: inherit; margin-right: 8px; margin-left: 8px; border-width: initial; border-style: initial; border-color: transparent; border-radius: 2px;"><span style="box-sizing: inherit;">⇾</span></button><button aria-label="Go to last page" title="Go to last page" style="box-sizing: inherit; margin-right: 8px; margin-left: 8px; border-width: initial; border-style: initial; border-color: transparent; border-radius: 2px;"><span style="box-sizing: inherit;">⇾|</span></button></div></div></td></tr></tfoot></table>
+    <spam></spam>
+
+
+<ul >
+  <li>Coffee 1</li>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li >Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+    "#;
+    return html;
+    // return <()>::try_from(html).unwrap();
+}

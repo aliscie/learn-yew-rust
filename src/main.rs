@@ -1,10 +1,10 @@
 extern crate yew;
 extern crate web_sys;
+extern crate wasm_bindgen;
 
 // use yew::prelude::*;
-mod app;
-
-use app::App;
+mod editor;
+use editor::App;
 
 
 fn main() {

@@ -1,11 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+    caret-color: lightblue;
+    caret-shape: bar;
+}
 
-/*h1:hover {*/
-/*    background-color: yellow;*/
-/*    transition: background-color 1s;*/
-/*}*/
+#drag {
+    position: absolute;
+    /*left: 5%;*/
+    /*right: 95%;*/
+    /*margin-left: 10px;*/
+    /*margin-right: 100px;*/
+    font-size: 20px;
+    transition: opacity 1s;
+    z-index: 100;
+    cursor: pointer;
+
+}
+
+#drag:hover {
+    background: rgba(0, 3, 0, 0.1);
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+
+h1, h2, h3, h4, h5, h6, span, p {
+    draggable: true;
+
+}
+
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
 
 [contenteditable] {
     outline: 0;

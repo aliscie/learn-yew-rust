@@ -28,5 +28,10 @@ features = [
     'Node',
     'Window',
     "DomParser",
-    "SupportedType"
+    "SupportedType",
+    "NodeList",
+    "Event",
+    "EventTarget",
+    "HtmlFormElement",
+    "DomRect",
 ]
